@@ -43,7 +43,7 @@
 <body class="same-font">
 
     <header>
-        <nav class="w-[1280px] mx-auto pt-8 mb-8">
+        <nav class="lg:w-[1280px] w-full mx-auto pt-8 mb-8">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -92,17 +92,34 @@
 
         <!-- carousal part start -->
 
-        <div class="banner w-[1280px] mx-auto">
-          <div class="carousel w-full">
+        <div class="banner lg:w-[1280px] w-full mx-auto p-0">
+          <div class="carousel">
+
+            <!-- slide 1 -->
             <div id="slide1" class="carousel-item relative w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-                class="w-full" />
+              <div class="p-12 lg:p-28 lg:w-full bg-[#e76f511c] w-full flex flex-col lg:flex lg:flex-row lg:justify-around lg:items-center">
+                  <div class="banner-content">
+                      <h1 class=" text-4xl font-semibold mb-5 lg:text-6xl lg:font-bold lg:leading-tight lg:mb-5 text-[#000000]">
+                        Ride-on R15 V4 <br> with Smile
+                      </h1>
+                      <p class="text-base font-light text-[#000000] mb-8">
+                        Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.
+                      </p>
+                      <div class="p-0">
+                        <a class="btn bg-[#E76F51] text-[#ffffff] lg:px-14 pt-4 pb-4 h-auto lg:text-xl lg:font-bold">Purchase</a>
+                      </div>
+                  </div>
+                  <div class="banner-img">
+                      <img src="./images/slider/bike1.png" alt="" class="w-full h-auto">
+                  </div>
+              </div>
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide4" class="btn btn-circle">❮</a>
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div>
+
+            <!-- slide 2 -->
             <div id="slide2" class="carousel-item relative w-full">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
@@ -112,6 +129,8 @@
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div>
+
+            <!-- slide 3 -->
             <div id="slide3" class="carousel-item relative w-full">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
@@ -121,15 +140,8 @@
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide4" class="carousel-item relative w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-                class="w-full" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-            </div>
+
+
           </div>
         </div>
 
